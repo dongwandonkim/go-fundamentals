@@ -8,12 +8,7 @@ func main() {
 	cards := deck { newCard(), "Ace of Diamonds" }
 	cards = append(cards, "Six of Spades")
 
-	for _, card := range cards {
-		fmt.Println(card)
-	}
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
 
 	fmt.Println(cards)
 }
